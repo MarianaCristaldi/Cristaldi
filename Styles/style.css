@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@300&family=Yanone+Kaffeesatz:wght@200;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.header {
+    grid-area: header;
+    background-color: black;
+    font-family: Cairo; 
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 20px;
+    gap: 15px;
+}
+.menu__item a {
+    color: white;
+    text-decoration: none;
+}
+.menu__item.active a {
+    text-decoration: underline;
+}
+main {
+    grid-area: main;
+}
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 4fr 1fr;
+    grid-template-areas: 
+    "logo video"
+    "logo imagen"
+    "seguinos seguinos";
+    background-image: url(../img/Automatización.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+.logounico {
+    width: 400px;
+    height: 400px;  
+}
+.video {
+    grid-area: video;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Cairo;
+    font-weight: 400;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 5px;
+
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(5, 5, 5);
+
+}
+.videotexto {
+    color: white;
+    text-decoration: none;
+    padding-left: 140px;
+}
+.videolugar{
+    display: flex;
+    justify-content: center;
+}
+.videovideo {
+    width: 50%;
+}
+.imagen {
+    grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Cairo;
+    font-weight: 400;
+    font-size: 30px;
+    gap: 5px;
+}
+.imagenlugar {
+    display: flex;
+    justify-content: center;
+}
+.imagenimagen {
+width: 30%;
+}
+.imagentexto {
+    color: white;
+    text-decoration: none;
+    padding-left: 170px;
+}
+.seguinos {
+    grid-area: seguinos;
+    background-color: rgb(5, 5, 5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+.ig {
+    width: 30px;
+}
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.pagina1 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr 1fr;
+    grid-template-areas: 
+    "headerpagina1 headerpagina1"
+    "mainpagina1 mainpagina1"
+    "seguinos seguinos"
+    "footer footer";
+}
+.headerpagina1 {
+    grid-area: headerpagina1;
+    background-color: black;
+    font-family: Cairo; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icono {
+    width: 100px;
+}
+.mainpagina1 {
+    grid-area: mainpagina1;
+    background-image: url(../img/Automatización.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 60px;
+    gap: 30px;
+    justify-content: center;
+}
+.tarjetita {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 0px;
+    border-radius: 30px;
+    overflow: hidden;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Cairo;
+    font-size: 10px;
+    padding-inline: 10px;
+}
+.foto1 {
+    max-width: 100%
+}   
+.foto2 {
+    max-width: 100%
+}
+.parrafo {
+    max-width: 100%
+}
+.pagina2 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr 1fr;
+    grid-template-areas: 
+    "headerpagina1 headerpagina1"
+    "porelmundo porelmundo"
+    "seguinos seguinos"
+    "footer footer";
+ }
+ .porelmundo {
+    grid-area: porelmundo;
+    background-image: url(../img/Automatización.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;
+ }
+ .trabajos {
+    width: 800px;
+    height: 600px;
+    padding: 10px;    
+}
+.trabajos_imagen {
+    width: 90%;
+    padding-left: 80px;
+ }
+.trabajos_titulo {
+    font-size:xx-large;
+    background-color: rgb(106, 107, 107);
+    color: rgb(7, 7, 7);
+    padding: 20px;
+    text-align: center;
+ }
+.trabajos_parrafo {
+    font-style: oblique;
+    background-color: rgb(106, 107, 107);
+ }
+.pagina3 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr 1fr;
+    grid-template-areas: 
+    "headerpagina1"
+    "servicios"
+    "seguinos"
+    "footer";
+}
+.servicios {
+    grid-area: servicios;
+    background-image: url(../img/Automatización.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;  
+}
+.instalacion {
+    background-color: black;
+    font-family: Cairo; 
+    color: white;
+    font-size: small;
+    padding: 5px;
+}
+.instalacion_imagen {
+    width: 300px;
+}
+.reparacion {
+    background-color: black;
+    font-family: Cairo; 
+    color: white;
+    font-size: small;
+    padding: 5px;
+}
+.reparacion_video {
+    width: 300px;
+    height: 200px;
+}
+.remota {
+    background-color: black;
+    font-family: Cairo; 
+    color: white;
+    font-size: small;
+    padding: 5px;
+}
+.remota_imagen {
+    width: 300px;
+}
+.pagina4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr 1fr;
+    grid-template-areas: 
+    "headerpagina1"
+    "contacto"
+    "seguinos"
+    "footer";
+}
+.contacto {
+    grid-area: contacto;
+    background-image: url(../img/Automatización.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    color: white;
+    font-family: Cairo;
+    text-shadow: 2px 2px 0 black; 
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  
+}
+.formulario {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.25fr;
+    grid-template-areas: 
+    "nombre nombre"
+    "email numero"
+    "mensaje mensaje"
+    "enviar reset";
+    font-family: Cairo;
+    align-items: center; 
+
+}
+.nombre {
+    grid-area: nombre;
+}
+.email {
+    grid-area: email;
+}
+.numero {
+    grid-area: numero;
+}
+.mensaje {
+    grid-area: mensaje;
+}
+.enviar {
+    grid-area: enviar;
+}
+.reset {
+    grid-area: reset;
+}
+@media screen and (max-width: 480px) {
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        align-items: center;
+    }
+    .logo {
+        padding: 5px;
+    }
+    .logounico {
+        width: 180px;
+        height: 180px;
+    }
+    .video {
+        padding-top: 0px;
+        padding-bottom: 0px;    
+        font-size: 10px;
+    }
+    .videotexto {
+        padding-left: 190px;
+    }
+    .videovideo {
+        width: 40%;
+    }
+    .videolugar {
+        display: flex;
+        justify-content: center;
+    }
+    .imagen {
+        font-size: 10px;
+    }
+    .imagenlugar {
+        display: flex;
+        justify-content: center;
+    }
+    .imagenimagen {
+    width: 20%;
+    }
+    .imagentexto {
+        padding-left: 200px;
+    }
+    .seguinos {
+        padding: 0px;
+        gap: 15px;
+        font-size: 10px;
+    }
+    .ig {
+        width: 20px;
+    }
+    footer {
+        padding: 0px;
+        font-size: 10px;
+    }
+    .header {
+        font-size: 10px;  
+    }
+    .icono {
+        width: 60px;
+        height: 60px;
+    }
+    .menu {
+        padding:10px 0px 10px 0px;
+    }
+    .headerpagina1 {
+        font-size: 8px;      
+    }
+
+    .tarjetita {
+        width: 50%;
+        height: 50%;
+        font-size: 7px;
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 0px;
+        padding-inline: 5px;
+    }
+    .foto1 {
+        max-width: 100%
+    }
+    .foto2 {
+        max-width: 100%
+    }
+    .mainpagina1 {
+        padding: 0px;
+    }
+    .porelmundo {
+        display: flex;
+        padding: 10px;
+        gap: 5px;
+        justify-content: center;
+    }
+    .trabajos {
+        width: 500px;
+        height: 300px;
+        padding: 10px; 
+    }
+    .trabajos_titulo {
+        font-size: large;
+        padding: 3px;
+    }
+    .trabajos_parrafo {
+        font-size: small;
+        padding: 10px;
+        
+    }
+    .servicios {
+        padding: 10px;
+        gap: 5px;
+        justify-content: center;
+    }
+    .instalacion_imagen {
+        width: 100px;
+    }
+    .instalacion {
+        font-size: 7px;
+    }
+    .reparacion {
+        font-size: 7px;
+    }
+    .reparacion_video {
+        width: 100px;
+        height: 50px;
+    }
+    .remota {
+        font-size: 7px;
+    }
+    .remota_imagen {
+        width: 100px;
+    }
+    .contacto {
+        padding-right: 100px;
+    }
+}
