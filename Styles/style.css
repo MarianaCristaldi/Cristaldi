@@ -84,6 +84,9 @@ main {
     text-decoration: none;
     padding-left: 140px;
 }
+.videotexto:hover {
+    transform: scale(1.1) translateY(-10px);
+}
 .videolugar{
     display: flex;
     justify-content: center;
@@ -113,6 +116,9 @@ width: 30%;
     text-decoration: none;
     padding-left: 170px;
 }
+.imagentexto:hover {
+    transform: scale(1.1) translateY(-10px);
+}
 .seguinos {
     grid-area: seguinos;
     background-color: rgb(5, 5, 5);
@@ -125,6 +131,9 @@ width: 30%;
 }
 .ig {
     width: 30px;
+}
+.ig:hover {
+    transform: scale(1.1) translateY(-10px);
 }
 footer {
     grid-area: footer;
@@ -180,6 +189,9 @@ footer {
     font-family: Cairo;
     font-size: 10px;
     padding-inline: 10px;
+}
+.tarjetita:hover {
+    transform: scale(1.1) translateY(-10px);
 }
 .foto1 {
     max-width: 100%
